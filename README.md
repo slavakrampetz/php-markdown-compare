@@ -2,11 +2,36 @@
 
 Main idea is compare PHP Markdown parsers/converters, 
 find which one is faster and have a smallest memory footprint.
+           
 
+## Reasons
+                                 
+1. Cannot find normal independent comparison, including different versions.
+2. Existing comparison, 
+   [league/commonmark script](https://github.com/thephpleague/commonmark/blob/2.4/tests/benchmark/benchmark.php),
+   over-engineered (too complex) and not enough isolated.
+3. No results published
+4. No comparison of different engine supported abilities (TBD).  
+                                                               
 
+## Current versions compared
+
+1. [league/commonmark](https://github.com/thephpleague/commonmark), version 2.4.2
+   - alias `cm`: `League\CommonMark\CommonMarkConverter`
+   - alias `cm-gfm`: `League\CommonMark\GithubFlavoredMarkdownConverter`
+   - alias `cm-all`: `League\CommonMark\MarkdownConverter` + all possible plugins
+2. [Parsedown](https://github.com/erusev/parsedown)
+   - alias `pd-17`: version 1.7.4 / stable
+   - alias `pd-18`: version 1.8.0-beta-7 / beta
+   - alias `pd-20`: version 2.0.0-dev / dev
+3. [cebe/markdown](https://github.com/cebe/markdown), version 1.2.1
+   - alias `cebe-md`: `cebe\markdown\Markdown`
+   - alias `cebe-md-gfm`: `cebe\markdown\GithubMarkdown`
+   - alias `cebe-md-extra`: `cebe\markdown\MarkdownExtra`
+   
 ## Current results
 
-Date: 2024-02-29
+Date: 2024-02-29  
 OS: Linux
 
     $ php -d xdebug.mode=off run.php -memory --csv test.csv

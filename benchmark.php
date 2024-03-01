@@ -107,7 +107,7 @@ $parserRunner = match($parser) {
 	PARSER_PARSEDOWN_17,
 	PARSER_PARSEDOWN_18 =>
 		static function ($markdown) {
-			/** @noinspection PhpUndefinedClassInspection */
+			/** @noinspection PhpMultipleClassDeclarationsInspection */
 			$parser = new Parsedown();
 			$parser->text($markdown);
 		},
@@ -119,19 +119,19 @@ $parserRunner = match($parser) {
 		},
 
 	PARSER_CEBE_MD => static function ($markdown) {
-		/** @noinspection PhpUndefinedClassInspection, PhpUndefinedNamespaceInspection */
+		/** @noinspection PhpUndefinedNamespaceInspection */
 		$parser = new \cebe\markdown\Markdown();
 		$parser->parse($markdown);
 	},
 
 	PARSER_CEBE_MD_GFM => static function ($markdown) {
-		/** @noinspection PhpUndefinedClassInspection, PhpUndefinedNamespaceInspection */
+		/** @noinspection PhpUndefinedNamespaceInspection */
 		$parser = new \cebe\markdown\GithubMarkdown();
 		$parser->parse($markdown);
 	},
 
 	PARSER_CEBE_MD_EXTRA => static function ($markdown) {
-		/** @noinspection PhpUndefinedClassInspection, PhpUndefinedNamespaceInspection */
+		/** @noinspection PhpUndefinedNamespaceInspection */
 		$parser = new \cebe\markdown\MarkdownExtra();
 		$parser->parse($markdown);
 	},
