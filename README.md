@@ -6,8 +6,7 @@ find which one is faster and have a smallest memory footprint.
 
 ## Reasons
                                  
-1. Cannot find normal independent comparison, including different versions.
-2. Existing comparison, 
+1. Cannot find useful independent comparison, including different versions. Best one comparison found, 
    [league/commonmark script](https://github.com/thephpleague/commonmark/blob/2.4/tests/benchmark/benchmark.php),
    over-engineered (too complex) and not enough isolated.
 3. No results published
