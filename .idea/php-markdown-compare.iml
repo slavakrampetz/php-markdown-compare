@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/vendor" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/League/CommonMark/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/Parsedown/v1.7.4/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/Parsedown/v1.8.0-beta-7/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/Parsedown/v1.8.0-beta-7/test/data" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/Parsedown/v2.0.0-dev/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/Parsedown/v2.0.0-dev/tests/data" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/cebe/markdown/tests" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/.idea" />
+      <excludeFolder url="file://$MODULE_DIR$/compare" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
